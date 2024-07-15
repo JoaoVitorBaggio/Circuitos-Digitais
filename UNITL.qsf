@@ -1,0 +1,112 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 14:48:24  July 11, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		UNITL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY UNITL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:48:24  JULY 11, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name BDF_FILE ConversorDisplay/G.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/F.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/E.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/D.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/C.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/B.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/A.bdf
+set_global_assignment -name BDF_FILE Soma/RCA16.bdf
+set_global_assignment -name BDF_FILE Soma/RCA8.bdf
+set_global_assignment -name BDF_FILE Soma/HA.bdf
+set_global_assignment -name BDF_FILE Soma/FAPG.bdf
+set_global_assignment -name BDF_FILE Soma/CLAU4.bdf
+set_global_assignment -name BDF_FILE Soma/CLA4.bdf
+set_global_assignment -name BDF_FILE Etc/OR4b.bdf
+set_global_assignment -name BDF_FILE Etc/NOT4b.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x8.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x4.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x1.bdf
+set_global_assignment -name BDF_FILE Etc/MUL8.bdf
+set_global_assignment -name BDF_FILE Etc/AND4b.bdf
+set_global_assignment -name BDF_FILE IO/Display.bdf
+set_global_assignment -name BDF_FILE Soma/RCA4.bdf
+set_global_assignment -name BDF_FILE Soma/FAC.bdf
+set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE IO/Led.bdf
+set_global_assignment -name BDF_FILE IO/Switch.bdf
+set_global_assignment -name BDF_FILE UNITL.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/C7S.bdf
+set_location_assignment PIN_B1 -to B1
+set_location_assignment PIN_B2 -to B2
+set_location_assignment PIN_C1 -to C1
+set_location_assignment PIN_C2 -to C2
+set_location_assignment PIN_D2 -to D2
+set_location_assignment PIN_D13 -to D13
+set_location_assignment PIN_E1 -to E1
+set_location_assignment PIN_E3 -to E3
+set_location_assignment PIN_E4 -to E4
+set_location_assignment PIN_E11 -to E11
+set_location_assignment PIN_F2 -to F2
+set_location_assignment PIN_F11 -to F11
+set_location_assignment PIN_F12 -to F12
+set_location_assignment PIN_F13 -to F13
+set_location_assignment PIN_G4 -to G4
+set_location_assignment PIN_G5 -to G5
+set_location_assignment PIN_G12 -to G12
+set_location_assignment PIN_H1 -to H1
+set_location_assignment PIN_H5 -to H5
+set_location_assignment PIN_H6 -to H6
+set_location_assignment PIN_H7 -to H7
+set_location_assignment PIN_H12 -to H12
+set_location_assignment PIN_H13 -to H13
+set_location_assignment PIN_J1 -to J1
+set_location_assignment PIN_J2 -to J2
+set_location_assignment PIN_J3 -to J3
+set_location_assignment PIN_J6 -to J6
+set_location_assignment PIN_J7 -to J7
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
