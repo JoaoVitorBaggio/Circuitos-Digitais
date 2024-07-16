@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 152 208)
+	(rect 16 16 152 176)
 	(text "Display" (rect 5 0 46 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -79,14 +79,7 @@ applicable agreement for further details.
 		(text "F13" (rect 94 123 115 137)(font "Arial" (font_size 8)))
 		(line (pt 136 128)(pt 120 128))
 	)
-	(port
-		(pt 136 144)
-		(output)
-		(text "D13" (rect 0 0 22 14)(font "Arial" (font_size 8)))
-		(text "D13" (rect 93 139 115 153)(font "Arial" (font_size 8)))
-		(line (pt 136 144)(pt 120 144))
-	)
 	(drawing
-		(rectangle (rect 16 16 120 176))
+		(rectangle (rect 16 16 120 144))
 	)
 )

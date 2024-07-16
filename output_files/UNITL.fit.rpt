@@ -1,6 +1,6 @@
 Fitter report for UNITL
-Sun Jul 14 20:54:25 2024
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Jul 16 17:22:33 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -11,33 +11,34 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   3. Fitter Settings
   4. Parallel Compilation
   5. I/O Assignment Warnings
-  6. Incremental Compilation Preservation Summary
-  7. Incremental Compilation Partition Settings
-  8. Incremental Compilation Placement Preservation
-  9. Pin-Out File
- 10. Fitter Resource Usage Summary
- 11. Fitter Partition Statistics
- 12. Input Pins
- 13. Output Pins
- 14. Dual Purpose and Dedicated Pins
- 15. I/O Bank Usage
- 16. All Package Pins
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Non-Global High Fan-Out Signals
- 21. Other Routing Usage Summary
- 22. LAB Logic Elements
- 23. LAB Signals Sourced
- 24. LAB Signals Sourced Out
- 25. LAB Distinct Inputs
- 26. I/O Rules Summary
- 27. I/O Rules Details
- 28. I/O Rules Matrix
- 29. Fitter Device Options
- 30. Operating Settings and Conditions
- 31. Fitter Messages
- 32. Fitter Suppressed Messages
+  6. Ignored Assignments
+  7. Incremental Compilation Preservation Summary
+  8. Incremental Compilation Partition Settings
+  9. Incremental Compilation Placement Preservation
+ 10. Pin-Out File
+ 11. Fitter Resource Usage Summary
+ 12. Fitter Partition Statistics
+ 13. Input Pins
+ 14. Output Pins
+ 15. Dual Purpose and Dedicated Pins
+ 16. I/O Bank Usage
+ 17. All Package Pins
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Non-Global High Fan-Out Signals
+ 22. Routing Usage Summary
+ 23. LAB Logic Elements
+ 24. LAB Signals Sourced
+ 25. LAB Signals Sourced Out
+ 26. LAB Distinct Inputs
+ 27. I/O Rules Summary
+ 28. I/O Rules Details
+ 29. I/O Rules Matrix
+ 30. Fitter Device Options
+ 31. Operating Settings and Conditions
+ 32. Fitter Messages
+ 33. Fitter Suppressed Messages
 
 
 
@@ -60,26 +61,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Fitter Summary                                                                       ;
-+------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jul 14 20:54:24 2024           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; UNITL                                           ;
-; Top-level Entity Name              ; UNITL                                           ;
-; Family                             ; Cyclone III                                     ;
-; Device                             ; EP3C16F484C6                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 18 / 15,408 ( < 1 % )                           ;
-;     Total combinational functions  ; 18 / 15,408 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                              ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 28 / 347 ( 8 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 516,096 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Fitter Summary                                                                  ;
++------------------------------------+--------------------------------------------+
+; Fitter Status                      ; Successful - Tue Jul 16 17:22:33 2024      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; UNITL                                      ;
+; Top-level Entity Name              ; UNITL                                      ;
+; Family                             ; Cyclone III                                ;
+; Device                             ; EP3C16F484C6                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 18 / 15,408 ( < 1 % )                      ;
+;     Total combinational functions  ; 18 / 15,408 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                         ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 27 / 347 ( 8 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -149,7 +150,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -166,7 +167,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; G12      ; Missing drive strength and slew rate ;
 ; F12      ; Missing drive strength and slew rate ;
 ; F13      ; Missing drive strength and slew rate ;
-; D13      ; Missing drive strength and slew rate ;
 ; J1       ; Missing drive strength and slew rate ;
 ; J2       ; Missing drive strength and slew rate ;
 ; J3       ; Missing drive strength and slew rate ;
@@ -180,19 +180,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+--------------------------------------+
 
 
-+----------------------------------------------+
-; Incremental Compilation Preservation Summary ;
-+---------------------+------------------------+
-; Type                ; Value                  ;
-+---------------------+------------------------+
-; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 85 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 85 ( 0.00 % )      ;
-;                     ;                        ;
-; Routing (by net)    ;                        ;
-;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
-;     -- Achieved     ; 0 / 0 ( 0.00 % )       ;
-+---------------------+------------------------+
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; D13        ; PIN_D13       ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                    ;
++---------------------+-------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+-------------------+----------------------------+--------------------------+
+; Placement (by node) ;                   ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 83 ) ; 0.00 % ( 0 / 83 )          ; 0.00 % ( 0 / 83 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 83 ) ; 0.00 % ( 0 / 83 )          ; 0.00 % ( 0 / 83 )        ;
+;                     ;                   ;                            ;                          ;
+; Routing (by net)    ;                   ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+-------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -205,20 +214,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+----------------+-------------------+-------------------------+------------------------+------------------------------+--------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Incremental Compilation Placement Preservation                                                             ;
-+--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
-+--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 75      ; 0                 ; N/A                     ; Source File       ;
-; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
-+--------------------------------+---------+-------------------+-------------------------+-------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Incremental Compilation Placement Preservation                                                                                     ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+; Top                            ; 0.00 % ( 0 / 73 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
++--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/output_files/UNITL.pin.
+The pin-out file can be found in C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/output_files/UNITL.pin.
 
 
 +---------------------------------------------------------------------+
@@ -247,7 +256,7 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 2 / 963 ( < 1 % )     ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 28 / 347 ( 8 % )      ;
+; I/O pins                                    ; 27 / 347 ( 8 % )      ;
 ;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )         ;
 ;                                             ;                       ;
@@ -266,8 +275,8 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
 ; Maximum fan-out                             ; 9                     ;
 ; Highest non-global fan-out                  ; 9                     ;
-; Total fan-out                               ; 111                   ;
-; Average fan-out                             ; 1.32                  ;
+; Total fan-out                               ; 110                   ;
+; Average fan-out                             ; 1.34                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -297,11 +306,12 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 0                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 15408 ( 0 % )    ; 0 / 15408 ( 0 % )              ;
+;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total LABs:  partially or completely used   ; 2 / 963 ( < 1 % )    ; 0 / 963 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 28                   ; 0                              ;
+; I/O pins                                    ; 27                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 112 ( 0 % )      ; 0 / 112 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -313,7 +323,7 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 106                  ; 5                              ;
+;     -- Total Connections                    ; 105                  ; 5                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -322,7 +332,7 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 10                   ; 0                              ;
-;     -- Output Ports                         ; 18                   ; 0                              ;
+;     -- Output Ports                         ; 17                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -368,7 +378,6 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ; B2   ; B2    ; 1        ; 0            ; 27           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; C1   ; C1    ; 1        ; 0            ; 26           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; C2   ; C2    ; 1        ; 0            ; 26           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; D13  ; D13   ; 7        ; 23           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; E1   ; E1    ; 1        ; 0            ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; E11  ; E11   ; 7        ; 21           ; 29           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; F11  ; F11   ; 7        ; 21           ; 29           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -405,7 +414,6 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ; K20      ; MSEL3                                 ; -                        ; -                       ; Dedicated Programming Pin ;
 ; K22      ; DIFFIO_R16n, nCEO                     ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
 ; F13      ; DIFFIO_T21p, PADD4, DQS2T/CQ3T,DPCLK8 ; Use as regular IO        ; F13                     ; Dual Purpose Pin          ;
-; D13      ; DIFFIO_T19p, PADD8                    ; Use as regular IO        ; D13                     ; Dual Purpose Pin          ;
 ; E11      ; DIFFIO_T16n, PADD13                   ; Use as regular IO        ; E11                     ; Dual Purpose Pin          ;
 ; F11      ; DIFFIO_T16p, PADD14                   ; Use as regular IO        ; F11                     ; Dual Purpose Pin          ;
 +----------+---------------------------------------+--------------------------+-------------------------+---------------------------+
@@ -422,7 +430,7 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ; 4        ; 0 / 41 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 46 ( 0 % )   ; 2.5V          ; --           ;
 ; 6        ; 1 / 43 ( 2 % )   ; 2.5V          ; --           ;
-; 7        ; 8 / 47 ( 17 % )  ; 2.5V          ; --           ;
+; 7        ; 7 / 47 ( 15 % )  ; 2.5V          ; --           ;
 ; 8        ; 0 / 43 ( 0 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -554,7 +562,7 @@ The pin-out file can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDig
 ; D10      ; 324        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; D12      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; D13      ; 310        ; 7        ; D13                                                       ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D13      ; 310        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D14      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; D15      ; 293        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -925,7 +933,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                        ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------+--------------+
-; |UNITL                     ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 28   ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; |UNITL                                     ; work         ;
+; |UNITL                     ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 27   ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; |UNITL                                     ; work         ;
 ;    |C7S:inst8|             ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |UNITL|C7S:inst8                           ; work         ;
 ;       |A:inst7|            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |UNITL|C7S:inst8|A:inst7                   ; work         ;
 ;       |B:inst1|            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |UNITL|C7S:inst8|B:inst1                   ; work         ;
@@ -958,7 +966,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; G12  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; F12  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; F13  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; D13  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; J1   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; J2   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; J3   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -969,13 +976,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; C2   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; B2   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; B1   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; E4   ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; J6   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; G5   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; D2   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; H6   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; H7   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; H5   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; E4   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; J6   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; G5   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; D2   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; H6   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; H7   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; H5   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; J7   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; G4   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; E3   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
@@ -993,33 +1000,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 0                 ; 6       ;
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 0                 ; 6       ;
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~1 ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~4 ; 1                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~3  ; 0                 ; 6       ;
-; J6                                                ;                   ;         ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 0                 ; 6       ;
-;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~2 ; 0                 ; 6       ;
-; G5                                                ;                   ;         ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 0                 ; 6       ;
-;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~2 ; 0                 ; 6       ;
-; D2                                                ;                   ;         ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~3 ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~1 ; 0                 ; 6       ;
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~4 ; 0                 ; 6       ;
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~3  ; 0                 ; 6       ;
+; J6                                                ;                   ;         ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 1                 ; 6       ;
+;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~2 ; 1                 ; 6       ;
+; G5                                                ;                   ;         ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 1                 ; 6       ;
+;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~2 ; 1                 ; 6       ;
+; D2                                                ;                   ;         ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst~0 ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~3 ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~1 ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~4 ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~3  ; 1                 ; 6       ;
 ; H6                                                ;                   ;         ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~2 ; 1                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~2 ; 0                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 0                 ; 6       ;
 ; H7                                                ;                   ;         ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~2 ; 1                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~2 ; 0                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst|inst~2  ; 0                 ; 6       ;
 ; H5                                                ;                   ;         ;
-;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 0                 ; 6       ;
-;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 0                 ; 6       ;
+;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 1                 ; 6       ;
+;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 1                 ; 6       ;
 ; J7                                                ;                   ;         ;
 ;      - ULA:inst1|RCA4:inst|FAC:inst1|inst5~0      ; 1                 ; 6       ;
 ;      - ULA:inst1|MUX2x4:inst9|MUX2x1:inst2|inst~0 ; 1                 ; 6       ;
@@ -1066,19 +1073,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Other Routing Usage Summary                         ;
-+-----------------------------+-----------------------+
-; Other Routing Resource Type ; Usage                 ;
-+-----------------------------+-----------------------+
-; Block interconnects         ; 24 / 47,787 ( < 1 % ) ;
-; C16 interconnects           ; 0 / 1,804 ( 0 % )     ;
-; C4 interconnects            ; 16 / 31,272 ( < 1 % ) ;
-; Global clocks               ; 0 / 20 ( 0 % )        ;
-; Local interconnects         ; 6 / 15,408 ( < 1 % )  ;
-; R24 interconnects           ; 1 / 1,775 ( < 1 % )   ;
-; R4 interconnects            ; 33 / 41,310 ( < 1 % ) ;
-+-----------------------------+-----------------------+
++-----------------------------------------------+
+; Routing Usage Summary                         ;
++-----------------------+-----------------------+
+; Routing Resource Type ; Usage                 ;
++-----------------------+-----------------------+
+; Block interconnects   ; 24 / 47,787 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 1,804 ( 0 % )     ;
+; C4 interconnects      ; 22 / 31,272 ( < 1 % ) ;
+; Direct links          ; 0 / 47,787 ( 0 % )    ;
+; Global clocks         ; 0 / 20 ( 0 % )        ;
+; Local interconnects   ; 6 / 15,408 ( < 1 % )  ;
+; R24 interconnects     ; 3 / 1,775 ( < 1 % )   ;
+; R4 interconnects      ; 42 / 41,310 ( < 1 % ) ;
++-----------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1217,9 +1225,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 28        ; 0            ; 28        ; 0            ; 0            ; 28        ; 28        ; 0            ; 28        ; 28        ; 0            ; 18           ; 0            ; 0            ; 10           ; 0            ; 18           ; 10           ; 0            ; 0            ; 0            ; 18           ; 0            ; 0            ; 0            ; 0            ; 0            ; 28        ; 0            ; 0            ;
+; Total Pass         ; 27        ; 0            ; 27        ; 0            ; 0            ; 27        ; 27        ; 0            ; 27        ; 27        ; 0            ; 17           ; 0            ; 0            ; 10           ; 0            ; 17           ; 10           ; 0            ; 0            ; 0            ; 17           ; 0            ; 0            ; 0            ; 0            ; 0            ; 27        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 28           ; 0         ; 28           ; 28           ; 0         ; 0         ; 28           ; 0         ; 0         ; 28           ; 10           ; 28           ; 28           ; 18           ; 28           ; 10           ; 18           ; 28           ; 28           ; 28           ; 10           ; 28           ; 28           ; 28           ; 28           ; 28           ; 0         ; 28           ; 28           ;
+; Total Inapplicable ; 0         ; 27           ; 0         ; 27           ; 27           ; 0         ; 0         ; 27           ; 0         ; 0         ; 27           ; 10           ; 27           ; 27           ; 17           ; 27           ; 10           ; 17           ; 27           ; 27           ; 27           ; 10           ; 27           ; 27           ; 27           ; 27           ; 27           ; 0         ; 27           ; 27           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; E11                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; F11                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1228,7 +1236,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; G12                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; F12                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; F13                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; D13                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; J1                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; J2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; J3                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1320,7 +1327,9 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "D13" is assigned to location or region, but does not exist in design
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1333,23 +1342,24 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/output_files/UNITL.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4878 megabytes
-    Info: Processing ended: Sun Jul 14 20:54:25 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (144001): Generated suppressed messages file C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/output_files/UNITL.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4928 megabytes
+    Info: Processing ended: Tue Jul 16 17:22:33 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/output_files/UNITL.fit.smsg.
+The suppressed messages can be found in C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/output_files/UNITL.fit.smsg.
 
 

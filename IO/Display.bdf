@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 96 40 264 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "HEX0[7..0]" (rect 5 0 59 12)(font "Arial" ))
+	(text "HEX0[7..0]" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -147,22 +147,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
-(pin
-	(output)
-	(rect 336 208 512 224)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D13" (rect 90 0 110 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
 (connector
 	(text "HEX0[0]" (rect 288 40 328 52)(font "Arial" ))
 	(pt 336 48)
@@ -197,9 +181,4 @@ applicable agreement for further details.
 	(text "HEX0[6]" (rect 288 184 328 196)(font "Arial" ))
 	(pt 336 192)
 	(pt 328 192)
-)
-(connector
-	(text "HEX0[7]" (rect 288 208 328 220)(font "Arial" ))
-	(pt 336 216)
-	(pt 328 216)
 )

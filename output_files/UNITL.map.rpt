@@ -1,6 +1,6 @@
 Analysis & Synthesis report for UNITL
-Sun Jul 14 20:54:19 2024
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Jul 16 17:22:22 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -39,24 +39,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 14 20:54:19 2024           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; UNITL                                           ;
-; Top-level Entity Name              ; UNITL                                           ;
-; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 18                                              ;
-;     Total combinational functions  ; 18                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 28                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jul 16 17:22:22 2024      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; UNITL                                      ;
+; Top-level Entity Name              ; UNITL                                      ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 18                                         ;
+;     Total combinational functions  ; 18                                         ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 27                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -152,37 +152,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
-; ConversorDisplay/G.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/G.bdf   ;         ;
-; ConversorDisplay/F.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/F.bdf   ;         ;
-; ConversorDisplay/E.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/E.bdf   ;         ;
-; ConversorDisplay/D.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/D.bdf   ;         ;
-; ConversorDisplay/C.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/C.bdf   ;         ;
-; ConversorDisplay/B.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/B.bdf   ;         ;
-; ConversorDisplay/A.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/A.bdf   ;         ;
-; Etc/OR4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Etc/OR4b.bdf             ;         ;
-; Etc/NOT4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Etc/NOT4b.bdf            ;         ;
-; Etc/MUX2x4.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Etc/MUX2x4.bdf           ;         ;
-; Etc/MUX2x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Etc/MUX2x1.bdf           ;         ;
-; Etc/AND4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Etc/AND4b.bdf            ;         ;
-; IO/Display.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/IO/Display.bdf           ;         ;
-; Soma/RCA4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Soma/RCA4.bdf            ;         ;
-; Soma/FAC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/Soma/FAC.bdf             ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ULA.bdf                  ;         ;
-; IO/Led.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/IO/Led.bdf               ;         ;
-; IO/Switch.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/IO/Switch.bdf            ;         ;
-; UNITL.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/UNITL.bdf                ;         ;
-; ConversorDisplay/C7S.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Desktop/Trabalhos/CircuitosDigitais/LAB6/ConversorDisplay/C7S.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
+; ConversorDisplay/G.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/G.bdf   ;         ;
+; ConversorDisplay/F.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/F.bdf   ;         ;
+; ConversorDisplay/E.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/E.bdf   ;         ;
+; ConversorDisplay/D.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/D.bdf   ;         ;
+; ConversorDisplay/C.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/C.bdf   ;         ;
+; ConversorDisplay/B.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/B.bdf   ;         ;
+; ConversorDisplay/A.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/A.bdf   ;         ;
+; Etc/OR4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/OR4b.bdf             ;         ;
+; Etc/NOT4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/NOT4b.bdf            ;         ;
+; Etc/MUX2x4.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/MUX2x4.bdf           ;         ;
+; Etc/MUX2x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/MUX2x1.bdf           ;         ;
+; Etc/AND4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/AND4b.bdf            ;         ;
+; IO/Display.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Display.bdf           ;         ;
+; Soma/RCA4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Soma/RCA4.bdf            ;         ;
+; Soma/FAC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Soma/FAC.bdf             ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ULA.bdf                  ;         ;
+; IO/Led.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Led.bdf               ;         ;
+; IO/Switch.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Switch.bdf            ;         ;
+; UNITL.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/UNITL.bdf                ;         ;
+; ConversorDisplay/C7S.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/C7S.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -206,12 +206,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0                                          ;
 ;     -- I/O registers                        ; 0                                          ;
 ;                                             ;                                            ;
-; I/O pins                                    ; 28                                         ;
+; I/O pins                                    ; 27                                         ;
 ; Embedded Multiplier 9-bit elements          ; 0                                          ;
 ; Maximum fan-out node                        ; ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~4 ;
 ; Maximum fan-out                             ; 9                                          ;
-; Total fan-out                               ; 106                                        ;
-; Average fan-out                             ; 1.43                                       ;
+; Total fan-out                               ; 105                                        ;
+; Average fan-out                             ; 1.46                                       ;
 +---------------------------------------------+--------------------------------------------+
 
 
@@ -220,7 +220,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
-; |UNITL                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |UNITL                                     ; work         ;
+; |UNITL                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |UNITL                                     ; work         ;
 ;    |C7S:inst8|             ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8                           ; work         ;
 ;       |A:inst7|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|A:inst7                   ; work         ;
 ;       |B:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|B:inst1                   ; work         ;
@@ -279,8 +279,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Jul 14 20:54:17 2024
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Jul 16 17:22:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UNITL -c UNITL
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file conversordisplay/g.bdf
@@ -363,7 +363,6 @@ Info (12128): Elaborating entity "NOT4b" for hierarchy "ULA:inst1|NOT4b:inst7"
 Info (12128): Elaborating entity "Switch" for hierarchy "Switch:inst4"
 Info (12128): Elaborating entity "Led" for hierarchy "Led:inst3"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "D13" is stuck at GND
     Warning (13410): Pin "J1" is stuck at GND
     Warning (13410): Pin "J2" is stuck at GND
     Warning (13410): Pin "J3" is stuck at GND
@@ -375,14 +374,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 18 output pins
+    Info (21059): Implemented 17 output pins
     Info (21061): Implemented 18 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4584 megabytes
-    Info: Processing ended: Sun Jul 14 20:54:19 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4611 megabytes
+    Info: Processing ended: Tue Jul 16 17:22:22 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
