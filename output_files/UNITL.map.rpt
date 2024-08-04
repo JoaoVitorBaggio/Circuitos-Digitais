@@ -1,6 +1,6 @@
 Analysis & Synthesis report for UNITL
-Tue Jul 16 17:22:22 2024
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Sun Aug 04 19:11:33 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,13 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -39,24 +33,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 16 17:22:22 2024      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; UNITL                                      ;
-; Top-level Entity Name              ; UNITL                                      ;
-; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 18                                         ;
-;     Total combinational functions  ; 18                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 27                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sun Aug 04 19:11:33 2024               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; UNITL                                           ;
+; Top-level Entity Name              ; UNITL                                           ;
+; Family                             ; Cyclone III                                     ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -152,126 +146,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
-; ConversorDisplay/G.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/G.bdf   ;         ;
-; ConversorDisplay/F.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/F.bdf   ;         ;
-; ConversorDisplay/E.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/E.bdf   ;         ;
-; ConversorDisplay/D.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/D.bdf   ;         ;
-; ConversorDisplay/C.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/C.bdf   ;         ;
-; ConversorDisplay/B.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/B.bdf   ;         ;
-; ConversorDisplay/A.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/A.bdf   ;         ;
-; Etc/OR4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/OR4b.bdf             ;         ;
-; Etc/NOT4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/NOT4b.bdf            ;         ;
-; Etc/MUX2x4.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/MUX2x4.bdf           ;         ;
-; Etc/MUX2x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/MUX2x1.bdf           ;         ;
-; Etc/AND4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Etc/AND4b.bdf            ;         ;
-; IO/Display.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Display.bdf           ;         ;
-; Soma/RCA4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Soma/RCA4.bdf            ;         ;
-; Soma/FAC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/Soma/FAC.bdf             ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ULA.bdf                  ;         ;
-; IO/Led.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Led.bdf               ;         ;
-; IO/Switch.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/IO/Switch.bdf            ;         ;
-; UNITL.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/UNITL.bdf                ;         ;
-; ConversorDisplay/C7S.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/ConversorDisplay/C7S.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                              ;
-+---------------------------------------------+--------------------------------------------+
-; Resource                                    ; Usage                                      ;
-+---------------------------------------------+--------------------------------------------+
-; Estimated Total logic elements              ; 18                                         ;
-;                                             ;                                            ;
-; Total combinational functions               ; 18                                         ;
-; Logic element usage by number of LUT inputs ;                                            ;
-;     -- 4 input functions                    ; 16                                         ;
-;     -- 3 input functions                    ; 1                                          ;
-;     -- <=2 input functions                  ; 1                                          ;
-;                                             ;                                            ;
-; Logic elements by mode                      ;                                            ;
-;     -- normal mode                          ; 18                                         ;
-;     -- arithmetic mode                      ; 0                                          ;
-;                                             ;                                            ;
-; Total registers                             ; 0                                          ;
-;     -- Dedicated logic registers            ; 0                                          ;
-;     -- I/O registers                        ; 0                                          ;
-;                                             ;                                            ;
-; I/O pins                                    ; 27                                         ;
-; Embedded Multiplier 9-bit elements          ; 0                                          ;
-; Maximum fan-out node                        ; ULA:inst1|MUX2x4:inst9|MUX2x1:inst4|inst~4 ;
-; Maximum fan-out                             ; 9                                          ;
-; Total fan-out                               ; 105                                        ;
-; Average fan-out                             ; 1.46                                       ;
-+---------------------------------------------+--------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
-; |UNITL                     ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |UNITL                                     ; work         ;
-;    |C7S:inst8|             ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8                           ; work         ;
-;       |A:inst7|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|A:inst7                   ; work         ;
-;       |B:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|B:inst1                   ; work         ;
-;       |C:inst2|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|C:inst2                   ; work         ;
-;       |D:inst3|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|D:inst3                   ; work         ;
-;       |E:inst4|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|E:inst4                   ; work         ;
-;       |F:inst5|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|F:inst5                   ; work         ;
-;       |G:inst6|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|C7S:inst8|G:inst6                   ; work         ;
-;    |ULA:inst1|             ; 11 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1                           ; work         ;
-;       |MUX2x4:inst9|       ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|MUX2x4:inst9              ; work         ;
-;          |MUX2x1:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|MUX2x4:inst9|MUX2x1:inst1 ; work         ;
-;          |MUX2x1:inst2|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|MUX2x4:inst9|MUX2x1:inst2 ; work         ;
-;          |MUX2x1:inst4|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|MUX2x4:inst9|MUX2x1:inst4 ; work         ;
-;          |MUX2x1:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|MUX2x4:inst9|MUX2x1:inst  ; work         ;
-;       |RCA4:inst|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|RCA4:inst                 ; work         ;
-;          |FAC:inst1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |UNITL|ULA:inst1|RCA4:inst|FAC:inst1       ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |UNITL|ULA:inst1|MUX2x4:inst9|MUX2x1:inst1|inst ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -279,10 +156,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 16 17:22:19 2024
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Aug 04 19:11:32 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UNITL -c UNITL
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq24.bdf
+    Info (12023): Found entity 1: div_freq24
+Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq4.bdf
+    Info (12023): Found entity 1: div_freq4
+Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq2.bdf
+    Info (12023): Found entity 1: div_freq2
+Info (12021): Found 1 design units, including 1 entities, in source file partes/ula.bdf
+    Info (12023): Found entity 1: ULA
 Info (12021): Found 1 design units, including 1 entities, in source file conversordisplay/g.bdf
     Info (12023): Found entity 1: G
 Info (12021): Found 1 design units, including 1 entities, in source file conversordisplay/f.bdf
@@ -323,14 +208,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file etc/mul
     Info (12023): Found entity 1: MUL8
 Info (12021): Found 1 design units, including 1 entities, in source file etc/and4b.bdf
     Info (12023): Found entity 1: AND4b
-Info (12021): Found 1 design units, including 1 entities, in source file io/display.bdf
-    Info (12023): Found entity 1: Display
 Info (12021): Found 1 design units, including 1 entities, in source file soma/rca4.bdf
     Info (12023): Found entity 1: RCA4
 Info (12021): Found 1 design units, including 1 entities, in source file soma/fac.bdf
     Info (12023): Found entity 1: FAC
-Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
-    Info (12023): Found entity 1: ULA
 Info (12021): Found 1 design units, including 1 entities, in source file io/led.bdf
     Info (12023): Found entity 1: Led
 Info (12021): Found 1 design units, including 1 entities, in source file io/switch.bdf
@@ -339,8 +220,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file unitl.b
     Info (12023): Found entity 1: UNITL
 Info (12021): Found 1 design units, including 1 entities, in source file conversordisplay/c7s.bdf
     Info (12023): Found entity 1: C7S
+Info (12021): Found 1 design units, including 1 entities, in source file io/display0.bdf
+    Info (12023): Found entity 1: Display0
+Warning (12019): Can't analyze file -- file IO/empty.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file empty.bdf
+    Info (12023): Found entity 1: empty
+Info (12021): Found 1 design units, including 1 entities, in source file io/display1.bdf
+    Info (12023): Found entity 1: Display1
+Info (12021): Found 1 design units, including 1 entities, in source file etc/mux4x8.bdf
+    Info (12023): Found entity 1: MUX4x8
+Info (12021): Found 1 design units, including 1 entities, in source file soma/inc8.bdf
+    Info (12023): Found entity 1: INC8
+Info (12021): Found 1 design units, including 1 entities, in source file soma/hd.bdf
+    Info (12023): Found entity 1: HD
+Info (12021): Found 1 design units, including 1 entities, in source file soma/dec8.bdf
+    Info (12023): Found entity 1: DEC8
+Info (12021): Found 1 design units, including 1 entities, in source file memoria/dff8.bdf
+    Info (12023): Found entity 1: DFF8
+Info (12021): Found 1 design units, including 1 entities, in source file partes/cud8.bdf
+    Info (12023): Found entity 1: CUD8
+Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq26.bdf
+    Info (12023): Found entity 1: div_freq26
+Info (12021): Found 1 design units, including 1 entities, in source file io/button.bdf
+    Info (12023): Found entity 1: Button
+Info (12021): Found 1 design units, including 1 entities, in source file io/clock.bdf
+    Info (12023): Found entity 1: Clock
+Info (12021): Found 1 design units, including 1 entities, in source file memoria/dff3.bdf
+    Info (12023): Found entity 1: DFF3
+Info (12021): Found 1 design units, including 1 entities, in source file soma/inc3.bdf
+    Info (12023): Found entity 1: INC3
+Info (12021): Found 1 design units, including 1 entities, in source file partes/temporizador.bdf
+    Info (12023): Found entity 1: Temporizador
+Info (12021): Found 1 design units, including 1 entities, in source file etc/demux1x2.bdf
+    Info (12023): Found entity 1: DEMUX1x2
+Info (12021): Found 1 design units, including 1 entities, in source file etc/demux1x8.bdf
+    Info (12023): Found entity 1: DEMUX1x8
 Info (12127): Elaborating entity "UNITL" for the top level hierarchy
-Info (12128): Elaborating entity "Display" for hierarchy "Display:inst"
+Info (12128): Elaborating entity "Display0" for hierarchy "Display0:inst10"
 Info (12128): Elaborating entity "C7S" for hierarchy "C7S:inst8"
 Info (12128): Elaborating entity "A" for hierarchy "C7S:inst8|A:inst7"
 Info (12128): Elaborating entity "B" for hierarchy "C7S:inst8|B:inst1"
@@ -349,39 +265,22 @@ Info (12128): Elaborating entity "D" for hierarchy "C7S:inst8|D:inst3"
 Info (12128): Elaborating entity "E" for hierarchy "C7S:inst8|E:inst4"
 Info (12128): Elaborating entity "F" for hierarchy "C7S:inst8|F:inst5"
 Info (12128): Elaborating entity "G" for hierarchy "C7S:inst8|G:inst6"
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:inst1"
-Warning (275008): Primitive "GND" of instance "inst4" not used
-Info (12128): Elaborating entity "MUX2x4" for hierarchy "ULA:inst1|MUX2x4:inst9"
-Info (12128): Elaborating entity "MUX2x1" for hierarchy "ULA:inst1|MUX2x4:inst9|MUX2x1:inst1"
-Info (12128): Elaborating entity "RCA4" for hierarchy "ULA:inst1|RCA4:inst"
-Warning (275011): Block or symbol "FAC" of instance "inst" overlaps another block or symbol
-Info (12128): Elaborating entity "FAC" for hierarchy "ULA:inst1|RCA4:inst|FAC:inst4"
-Warning (275011): Block or symbol "AND2" of instance "inst3" overlaps another block or symbol
-Info (12128): Elaborating entity "AND4b" for hierarchy "ULA:inst1|AND4b:inst5"
-Info (12128): Elaborating entity "OR4b" for hierarchy "ULA:inst1|OR4b:inst6"
-Info (12128): Elaborating entity "NOT4b" for hierarchy "ULA:inst1|NOT4b:inst7"
+Info (12128): Elaborating entity "Display1" for hierarchy "Display1:inst"
+Info (12128): Elaborating entity "Button" for hierarchy "Button:inst1"
 Info (12128): Elaborating entity "Switch" for hierarchy "Switch:inst4"
-Info (12128): Elaborating entity "Led" for hierarchy "Led:inst3"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "J1" is stuck at GND
-    Warning (13410): Pin "J2" is stuck at GND
-    Warning (13410): Pin "J3" is stuck at GND
-    Warning (13410): Pin "H1" is stuck at GND
-    Warning (13410): Pin "F2" is stuck at GND
-    Warning (13410): Pin "C2" is stuck at GND
-    Warning (13410): Pin "B2" is stuck at GND
-    Warning (13410): Pin "B1" is stuck at GND
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4611 megabytes
-    Info: Processing ended: Tue Jul 16 17:22:22 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+Info (12128): Elaborating entity "Clock" for hierarchy "Clock:inst7"
+Error (12009): Node "Display[3]" is missing source
+Error (12009): Node "Display[2]" is missing source
+Error (12009): Node "Display[1]" is missing source
+Error (12009): Node "Display[0]" is missing source
+Error (12009): Node "Display[7]" is missing source
+Error (12009): Node "Display[6]" is missing source
+Error (12009): Node "Display[5]" is missing source
+Error (12009): Node "Display[4]" is missing source
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 8 errors, 2 warnings
+    Error: Peak virtual memory: 4564 megabytes
+    Error: Processing ended: Sun Aug 04 19:11:33 2024
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

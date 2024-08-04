@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY UNITL
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:48:24  JULY 11, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -49,38 +49,7 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_global_assignment -name BDF_FILE ConversorDisplay/G.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/F.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/E.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/D.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/C.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/B.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/A.bdf
-set_global_assignment -name BDF_FILE Soma/RCA16.bdf
-set_global_assignment -name BDF_FILE Soma/RCA8.bdf
-set_global_assignment -name BDF_FILE Soma/HA.bdf
-set_global_assignment -name BDF_FILE Soma/FAPG.bdf
-set_global_assignment -name BDF_FILE Soma/CLAU4.bdf
-set_global_assignment -name BDF_FILE Soma/CLA4.bdf
-set_global_assignment -name BDF_FILE Etc/OR4b.bdf
-set_global_assignment -name BDF_FILE Etc/NOT4b.bdf
-set_global_assignment -name BDF_FILE Etc/MUX2x8.bdf
-set_global_assignment -name BDF_FILE Etc/MUX2x4.bdf
-set_global_assignment -name BDF_FILE Etc/MUX2x1.bdf
-set_global_assignment -name BDF_FILE Etc/MUL8.bdf
-set_global_assignment -name BDF_FILE Etc/AND4b.bdf
-set_global_assignment -name BDF_FILE IO/Display.bdf
-set_global_assignment -name BDF_FILE Soma/RCA4.bdf
-set_global_assignment -name BDF_FILE Soma/FAC.bdf
-set_global_assignment -name BDF_FILE ULA.bdf
-set_global_assignment -name BDF_FILE IO/Led.bdf
-set_global_assignment -name BDF_FILE IO/Switch.bdf
-set_global_assignment -name BDF_FILE UNITL.bdf
-set_global_assignment -name BDF_FILE ConversorDisplay/C7S.bdf
 set_location_assignment PIN_B1 -to B1
 set_location_assignment PIN_B2 -to B2
 set_location_assignment PIN_C1 -to C1
@@ -109,4 +78,72 @@ set_location_assignment PIN_J2 -to J2
 set_location_assignment PIN_J3 -to J3
 set_location_assignment PIN_J6 -to J6
 set_location_assignment PIN_J7 -to J7
+set_global_assignment -name BDF_FILE Clock/div_freq24.bdf
+set_global_assignment -name BDF_FILE Clock/div_freq4.bdf
+set_global_assignment -name BDF_FILE Clock/div_freq2.bdf
+set_global_assignment -name BDF_FILE partes/ULA.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/G.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/F.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/E.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/D.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/C.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/B.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/A.bdf
+set_global_assignment -name BDF_FILE Soma/RCA16.bdf
+set_global_assignment -name BDF_FILE Soma/RCA8.bdf
+set_global_assignment -name BDF_FILE Soma/HA.bdf
+set_global_assignment -name BDF_FILE Soma/FAPG.bdf
+set_global_assignment -name BDF_FILE Soma/CLAU4.bdf
+set_global_assignment -name BDF_FILE Soma/CLA4.bdf
+set_global_assignment -name BDF_FILE Etc/OR4b.bdf
+set_global_assignment -name BDF_FILE Etc/NOT4b.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x8.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x4.bdf
+set_global_assignment -name BDF_FILE Etc/MUX2x1.bdf
+set_global_assignment -name BDF_FILE Etc/MUL8.bdf
+set_global_assignment -name BDF_FILE Etc/AND4b.bdf
+set_global_assignment -name BDF_FILE Soma/RCA4.bdf
+set_global_assignment -name BDF_FILE Soma/FAC.bdf
+set_global_assignment -name BDF_FILE IO/Led.bdf
+set_global_assignment -name BDF_FILE IO/Switch.bdf
+set_global_assignment -name BDF_FILE UNITL.bdf
+set_global_assignment -name BDF_FILE ConversorDisplay/C7S.bdf
+set_global_assignment -name BDF_FILE IO/Display0.bdf
+set_global_assignment -name BDF_FILE IO/empty.bdf
+set_global_assignment -name BDF_FILE empty.bdf
+set_global_assignment -name BDF_FILE IO/Display1.bdf
+set_global_assignment -name BDF_FILE Etc/MUX4x8.bdf
+set_global_assignment -name BDF_FILE Soma/INC8.bdf
+set_global_assignment -name BDF_FILE Soma/HD.bdf
+set_global_assignment -name BDF_FILE Soma/DEC8.bdf
+set_global_assignment -name BDF_FILE Memoria/DFF8.bdf
+set_global_assignment -name BDF_FILE partes/CUD8.bdf
+set_global_assignment -name BDF_FILE Clock/div_freq26.bdf
+set_global_assignment -name BDF_FILE IO/Button.bdf
+set_global_assignment -name BDF_FILE IO/Clock.bdf
+set_location_assignment PIN_E12 -to E12
+set_location_assignment PIN_F1 -to F1
+set_location_assignment PIN_F14 -to F14
+set_location_assignment PIN_F15 -to F15
+set_location_assignment PIN_F16 -to F16
+set_location_assignment PIN_G3 -to G3
+set_location_assignment PIN_G13 -to G13
+set_location_assignment PIN_G21 -to G21
+set_location_assignment PIN_H2 -to H2
+set_location_assignment PIN_H14 -to H14
+set_location_assignment PIN_H15 -to H15
+set_global_assignment -name BDF_FILE Memoria/DFF3.bdf
+set_global_assignment -name BDF_FILE Soma/INC3.bdf
+set_global_assignment -name BDF_FILE partes/Temporizador.bdf
+set_global_assignment -name BDF_FILE Etc/DEMUX1x2.bdf
+set_global_assignment -name BDF_FILE Etc/DEMUX1x8.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/Waveform.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

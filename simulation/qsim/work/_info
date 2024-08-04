@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\CD\simulation\qsim
+vDEMUX1x8
+Z1 IC3Zj[NKbakMj_4Ik3_:i00
+Z2 VdUzS_SZ=Je15l]jkZKhlE2
+Z3 dC:\CD\simulation\qsim
+Z4 w1722808755
+Z5 8UNITL.vo
+Z6 FUNITL.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|UNITL.vo|
+Z9 o-work work -O0
+Z10 n@d@e@m@u@x1x8
+Z11 !s100 M;<^HhKcn[Cfnm4nQlKl71
+Z12 !s108 1722808756.078000
+Z13 !s107 UNITL.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vDEMUX1x8_vlg_check_tst
+Z14 IVh@zY<A>VcNm]9CdiJX;d0
+Z15 VWgibQL=:TPYjEz;]MU3Sg1
+R3
+Z16 w1722808754
+Z17 8UNITL.vt
+Z18 FUNITL.vt
+L0 59
+R7
+r1
+31
+Z19 !s108 1722808756.250000
+Z20 !s107 UNITL.vt|
+Z21 !s90 -work|work|UNITL.vt|
+R9
+Z22 n@d@e@m@u@x1x8_vlg_check_tst
+Z23 !s100 EiGzf33Ao2VJRTj=Kz82e2
+!i10b 1
+!s85 0
+!s101 -O0
+vDEMUX1x8_vlg_sample_tst
+Z24 IEWJ99Mb@F>6h;0W>635e@1
+Z25 Vja38mR6eUBAL?@zIA0VG`3
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R9
+Z26 n@d@e@m@u@x1x8_vlg_sample_tst
+Z27 !s100 Vi1>mgd7SM?HR=[4^[9Fi3
+!i10b 1
+!s85 0
+!s101 -O0
+vDEMUX1x8_vlg_vec_tst
+Z28 Ia37VRGlOGC1k5HaIa;ee=2
+Z29 VP`P84iz^MejzWib>HCVQ21
+R3
+R16
+R17
+R18
+Z30 L0 279
+R7
+r1
+31
+R19
+R20
+R21
+R9
+Z31 n@d@e@m@u@x1x8_vlg_vec_tst
+Z32 !s100 FI7>RIkc?LPgnMml9O>Em2
+!i10b 1
+!s85 0
+!s101 -O0
+vTemporizador
+Z33 IPA<iRP93L5?L2SDE274eg3
+Z34 V>3d3hcGTfnzXZPd6@2lB[0
+R3
+Z35 w1722809293
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z36 n@temporizador
+!i10b 1
+Z37 !s100 VFM_=gZl18aKgCIRm9T6T2
+!s85 0
+Z38 !s108 1722809294.187000
+R13
+!s101 -O0
+vTemporizador_vlg_check_tst
+!i10b 1
+Z39 !s100 ^<0^S1[zI`YLIMJ:<kA>C2
+Z40 IzeL[oBl1?VSkYDZGz6^GP3
+Z41 Vho_=cAkP8hM:G4BEG8QG[0
+R3
+Z42 w1722809292
+R17
+R18
+L0 61
+R7
+r1
+!s85 0
+31
+Z43 !s108 1722809294.406000
+Z44 !s107 UNITL.vt|
+R21
+!s101 -O0
+R9
+Z45 n@temporizador_vlg_check_tst
+vTemporizador_vlg_sample_tst
+!i10b 1
+Z46 !s100 I^dcaXWn8hj9oAn8GIjT_3
+Z47 IMGm3Yd4eOfW[:k7=^d:BW0
+Z48 VBMnL=VDcbHS@aAE^S9LG^1
+R3
+R42
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R43
+R44
+R21
+!s101 -O0
+R9
+Z49 n@temporizador_vlg_sample_tst
+vTemporizador_vlg_vec_tst
+!i10b 1
+Z50 !s100 _l@LDOiG_zLGF]DL<RGfb3
+Z51 In5C:@Pj:[D1`bHS_IS1lQ1
+Z52 VGRo35`G;ZG_a`n^IGhjYF3
+R3
+R42
+R17
+R18
+Z53 L0 281
+R7
+r1
+!s85 0
+31
+R43
+R44
+R21
+!s101 -O0
+R9
+Z54 n@temporizador_vlg_vec_tst
