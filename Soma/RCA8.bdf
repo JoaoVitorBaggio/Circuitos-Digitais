@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 336 168 504 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Cin" (rect 5 0 22 12)(font "Arial" ))
+	(text "Cin" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -101,8 +101,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 400 368 528 464)
-	(text "somadorRCA4" (rect 5 0 87 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "RCA4" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -144,8 +144,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 624 376 752 472)
-	(text "somadorRCA4" (rect 5 0 87 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(text "RCA4" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
