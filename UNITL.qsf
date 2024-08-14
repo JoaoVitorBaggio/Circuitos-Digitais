@@ -153,3 +153,6 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name BDF_FILE IO/Display2.bdf
 set_global_assignment -name BDF_FILE IO/Display3.bdf
 set_global_assignment -name BDF_FILE NEANDER.bdf
+set_global_assignment -name BDF_FILE Memoria/DFFR8.bdf
+set_global_assignment -name BDF_FILE Memoria/REG8.bdf
+set_global_assignment -name BDF_FILE partes/PC.bdf
