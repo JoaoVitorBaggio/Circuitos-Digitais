@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UNITL
-Wed Aug 07 22:33:39 2024
+Sun Aug 18 17:55:40 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Aug 07 22:33:39 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 18 17:55:40 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; UNITL                                           ;
-; Top-level Entity Name              ; TopLevel                                        ;
+; Top-level Entity Name              ; NEANDER                                         ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 35                                              ;
-;     Total combinational functions  ; 35                                              ;
-;     Dedicated logic registers      ; 3                                               ;
-; Total registers                    ; 3                                               ;
-; Total pins                         ; 30                                              ;
+; Total logic elements               ; 40                                              ;
+;     Total combinational functions  ; 40                                              ;
+;     Dedicated logic registers      ; 35                                              ;
+; Total registers                    ; 35                                              ;
+; Total pins                         ; 42                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; TopLevel           ; UNITL              ;
+; Top-level entity name                                                      ; NEANDER            ; UNITL              ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,76 +157,122 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+---------+
-; Soma/HA.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/HA.bdf             ;         ;
-; Etc/MUX2x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/MUX2x1.bdf          ;         ;
-; Memoria/DFF3.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Memoria/DFF3.bdf        ;         ;
-; Soma/INC3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/INC3.bdf           ;         ;
-; partes/Temporizador.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/Temporizador.bdf ;         ;
-; Etc/DEMUX1x2.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/DEMUX1x2.bdf        ;         ;
-; Etc/DEMUX1x8.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/DEMUX1x8.bdf        ;         ;
-; partes/UC.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/UC.bdf           ;         ;
-; Etc/MUX2x3.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/MUX2x3.bdf          ;         ;
-; TopLevel.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/CD/TopLevel.bdf            ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------+---------+
+; Memoria/REG1.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Memoria/REG1.bdf          ;         ;
+; partes/ULA_encoder.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/ULA_encoder.bdf    ;         ;
+; partes/OPCODE_decoder.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/OPCODE_decoder.bdf ;         ;
+; Clock/div_freq24.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Clock/div_freq24.bdf      ;         ;
+; Clock/div_freq4.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Clock/div_freq4.bdf       ;         ;
+; Clock/div_freq2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Clock/div_freq2.bdf       ;         ;
+; Soma/RCA8.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/RCA8.bdf             ;         ;
+; Soma/HA.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/HA.bdf               ;         ;
+; Etc/OR4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/OR4b.bdf              ;         ;
+; Etc/NOT4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/NOT4b.bdf             ;         ;
+; Etc/MUX2x8.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/MUX2x8.bdf            ;         ;
+; Etc/MUX2x1.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/MUX2x1.bdf            ;         ;
+; Etc/AND4b.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/AND4b.bdf             ;         ;
+; Soma/RCA4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/RCA4.bdf             ;         ;
+; Soma/FAC.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/FAC.bdf              ;         ;
+; Soma/INC8.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/INC8.bdf             ;         ;
+; Memoria/DFF3.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Memoria/DFF3.bdf          ;         ;
+; Soma/INC3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Soma/INC3.bdf             ;         ;
+; partes/Temporizador.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/Temporizador.bdf   ;         ;
+; Etc/DEMUX1x2.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/DEMUX1x2.bdf          ;         ;
+; Etc/DEMUX1x8.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/DEMUX1x8.bdf          ;         ;
+; partes/UC.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/UC.bdf             ;         ;
+; Etc/MUX2x3.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/MUX2x3.bdf            ;         ;
+; partes/ULA8.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/ULA8.bdf           ;         ;
+; partes/ROM.vhd                   ; yes             ; User VHDL File                     ; C:/CD/partes/ROM.vhd            ;         ;
+; NEANDER.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/CD/NEANDER.bdf               ;         ;
+; Memoria/DFFR8.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Memoria/DFFR8.bdf         ;         ;
+; Memoria/REG8.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Memoria/REG8.bdf          ;         ;
+; partes/PC.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CD/partes/PC.bdf             ;         ;
+; Clock/div_freq25.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Clock/div_freq25.bdf      ;         ;
+; Etc/DEMUX1x16.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/CD/Etc/DEMUX1x16.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                        ;
-+---------------------------------------------+--------------------------------------+
-; Resource                                    ; Usage                                ;
-+---------------------------------------------+--------------------------------------+
-; Estimated Total logic elements              ; 35                                   ;
-;                                             ;                                      ;
-; Total combinational functions               ; 35                                   ;
-; Logic element usage by number of LUT inputs ;                                      ;
-;     -- 4 input functions                    ; 19                                   ;
-;     -- 3 input functions                    ; 13                                   ;
-;     -- <=2 input functions                  ; 3                                    ;
-;                                             ;                                      ;
-; Logic elements by mode                      ;                                      ;
-;     -- normal mode                          ; 35                                   ;
-;     -- arithmetic mode                      ; 0                                    ;
-;                                             ;                                      ;
-; Total registers                             ; 3                                    ;
-;     -- Dedicated logic registers            ; 3                                    ;
-;     -- I/O registers                        ; 0                                    ;
-;                                             ;                                      ;
-; I/O pins                                    ; 30                                   ;
-; Embedded Multiplier 9-bit elements          ; 0                                    ;
-; Maximum fan-out node                        ; Temporizador:inst1|DFF3:inst11|inst2 ;
-; Maximum fan-out                             ; 19                                   ;
-; Total fan-out                               ; 174                                  ;
-; Average fan-out                             ; 1.78                                 ;
-+---------------------------------------------+--------------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 40          ;
+;                                             ;             ;
+; Total combinational functions               ; 40          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 6           ;
+;     -- 3 input functions                    ; 4           ;
+;     -- <=2 input functions                  ; 30          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 40          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 35          ;
+;     -- Dedicated logic registers            ; 35          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 42          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 33          ;
+; Total fan-out                               ; 224         ;
+; Average fan-out                             ; 1.41        ;
++---------------------------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
-; |TopLevel                  ; 35 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |TopLevel                                                   ; work         ;
-;    |Temporizador:inst1|    ; 10 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1                                ; work         ;
-;       |DEMUX1x8:inst15|    ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DEMUX1x8:inst15                ; work         ;
-;          |DEMUX1x2:inst5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst5 ; work         ;
-;          |DEMUX1x2:inst6|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst6 ; work         ;
-;          |DEMUX1x2:inst7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst7 ; work         ;
-;          |DEMUX1x2:inst9|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst9 ; work         ;
-;       |DFF3:inst11|        ; 1 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|DFF3:inst11                    ; work         ;
-;       |INC3:inst13|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|INC3:inst13                    ; work         ;
-;          |HA:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|INC3:inst13|HA:inst7           ; work         ;
-;          |HA:inst8|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|INC3:inst13|HA:inst8           ; work         ;
-;       |MUX2x3:inst|        ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|MUX2x3:inst                    ; work         ;
-;          |MUX2x1:inst3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|MUX2x3:inst|MUX2x1:inst3       ; work         ;
-;          |MUX2x1:inst4|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|Temporizador:inst1|MUX2x3:inst|MUX2x1:inst4       ; work         ;
-;    |UC:inst|               ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TopLevel|UC:inst                                           ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
+; |NEANDER                      ; 40 (0)            ; 35 (0)       ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |NEANDER                                                                   ; work         ;
+;    |MUX2x1:inst9|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|MUX2x1:inst9                                                      ; work         ;
+;    |PC:inst10|                ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|PC:inst10                                                         ; work         ;
+;       |DFFR8:inst|            ; 11 (11)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|PC:inst10|DFFR8:inst                                              ; work         ;
+;    |Temporizador:inst1|       ; 3 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|Temporizador:inst1                                                ; work         ;
+;       |DEMUX1x8:inst15|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|Temporizador:inst1|DEMUX1x8:inst15                                ; work         ;
+;          |DEMUX1x2:inst7|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst7                 ; work         ;
+;       |DFF3:inst11|           ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|Temporizador:inst1|DFF3:inst11                                    ; work         ;
+;    |div_freq25:inst7|         ; 25 (1)            ; 25 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7                                                  ; work         ;
+;       |div_freq24:inst1|      ; 24 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1                                 ; work         ;
+;          |div_freq4:inst1|    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst1                 ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1 ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst  ; work         ;
+;          |div_freq4:inst2|    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst2                 ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1 ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst  ; work         ;
+;          |div_freq4:inst3|    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst3                 ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1 ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst  ; work         ;
+;          |div_freq4:inst4|    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst4                 ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1 ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst  ; work         ;
+;          |div_freq4:inst5|    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst5                 ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1 ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst  ; work         ;
+;          |div_freq4:inst|     ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst                  ; work         ;
+;             |div_freq2:inst1| ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1  ; work         ;
+;             |div_freq2:inst|  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NEANDER|div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst   ; work         ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; REG1:inst18|inst                      ; Merged with REG1:inst19|inst           ;
+; REG1:inst19|inst                      ; Stuck at GND due to stuck port data_in ;
+; Temporizador:inst1|DFF3:inst11|inst4  ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -233,12 +280,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3     ;
+; Total registers                              ; 35    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -258,9 +305,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Aug 07 22:33:38 2024
+    Info: Processing started: Sun Aug 18 17:55:37 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UNITL -c UNITL
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file memoria/reg1.bdf
+    Info (12023): Found entity 1: REG1
+Info (12021): Found 1 design units, including 1 entities, in source file partes/ula_encoder.bdf
+    Info (12023): Found entity 1: ULA_encoder
+Info (12021): Found 1 design units, including 1 entities, in source file partes/opcode_decoder.bdf
+    Info (12023): Found entity 1: OPCODE_decoder
 Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq24.bdf
     Info (12023): Found entity 1: div_freq24
 Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq4.bdf
@@ -360,32 +413,108 @@ Info (12021): Found 1 design units, including 1 entities, in source file partes/
     Info (12023): Found entity 1: UC
 Info (12021): Found 1 design units, including 1 entities, in source file etc/mux2x3.bdf
     Info (12023): Found entity 1: MUX2x3
-Info (12021): Found 1 design units, including 1 entities, in source file toplevel.bdf
-    Info (12023): Found entity 1: TopLevel
-Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (275043): Pin "charge_PC" is missing source
-Info (12128): Elaborating entity "UC" for hierarchy "UC:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file partes/ula8.bdf
+    Info (12023): Found entity 1: ULA8
+Info (12021): Found 2 design units, including 1 entities, in source file partes/rom.vhd
+    Info (12022): Found design unit 1: ROM-arch
+    Info (12023): Found entity 1: ROM
+Info (12021): Found 1 design units, including 1 entities, in source file io/display2.bdf
+    Info (12023): Found entity 1: Display2
+Info (12021): Found 1 design units, including 1 entities, in source file io/display3.bdf
+    Info (12023): Found entity 1: Display3
+Info (12021): Found 1 design units, including 1 entities, in source file neander.bdf
+    Info (12023): Found entity 1: NEANDER
+Info (12021): Found 1 design units, including 1 entities, in source file memoria/dffr8.bdf
+    Info (12023): Found entity 1: DFFR8
+Info (12021): Found 1 design units, including 1 entities, in source file memoria/reg8.bdf
+    Info (12023): Found entity 1: REG8
+Info (12021): Found 1 design units, including 1 entities, in source file partes/pc.bdf
+    Info (12023): Found entity 1: PC
+Info (12021): Found 1 design units, including 1 entities, in source file clock/div_freq25.bdf
+    Info (12023): Found entity 1: div_freq25
+Info (12021): Found 1 design units, including 1 entities, in source file etc/demux1x16.bdf
+    Info (12023): Found entity 1: DEMUX1x16
+Info (12021): Found 1 design units, including 1 entities, in source file io/leds.bdf
+    Info (12023): Found entity 1: LedS
+Info (12127): Elaborating entity "NEANDER" for the top level hierarchy
+Info (12128): Elaborating entity "REG1" for hierarchy "REG1:inst18"
+Info (12128): Elaborating entity "MUX2x1" for hierarchy "REG1:inst18|MUX2x1:inst1"
+Info (12128): Elaborating entity "ULA8" for hierarchy "ULA8:inst"
+Warning (275008): Primitive "GND" of instance "inst6" not used
+Info (12128): Elaborating entity "MUX2x8" for hierarchy "ULA8:inst|MUX2x8:inst2"
+Info (12128): Elaborating entity "RCA8" for hierarchy "ULA8:inst|RCA8:inst4"
+Info (12128): Elaborating entity "RCA4" for hierarchy "ULA8:inst|RCA8:inst4|RCA4:inst3"
+Warning (275011): Block or symbol "FAC" of instance "inst" overlaps another block or symbol
+Info (12128): Elaborating entity "FAC" for hierarchy "ULA8:inst|RCA8:inst4|RCA4:inst3|FAC:inst4"
+Warning (275011): Block or symbol "AND2" of instance "inst3" overlaps another block or symbol
+Info (12128): Elaborating entity "NOT4b" for hierarchy "ULA8:inst|NOT4b:inst11"
+Info (12128): Elaborating entity "AND4b" for hierarchy "ULA8:inst|AND4b:inst9"
+Info (12128): Elaborating entity "OR4b" for hierarchy "ULA8:inst|OR4b:inst8"
+Info (12128): Elaborating entity "ULA_encoder" for hierarchy "ULA_encoder:inst2"
+Warning (275009): Pin "ULA_Y" not connected
+Info (12128): Elaborating entity "UC" for hierarchy "UC:inst4"
+Info (12128): Elaborating entity "OPCODE_decoder" for hierarchy "OPCODE_decoder:inst11"
+Info (12128): Elaborating entity "DEMUX1x16" for hierarchy "OPCODE_decoder:inst11|DEMUX1x16:inst"
+Info (12128): Elaborating entity "DEMUX1x8" for hierarchy "OPCODE_decoder:inst11|DEMUX1x16:inst|DEMUX1x8:inst"
+Info (12128): Elaborating entity "DEMUX1x2" for hierarchy "OPCODE_decoder:inst11|DEMUX1x16:inst|DEMUX1x8:inst|DEMUX1x2:inst6"
+Info (12128): Elaborating entity "REG8" for hierarchy "REG8:inst17"
+Warning (275043): Pin "S[7..0]" is missing source
+Info (12128): Elaborating entity "DFFR8" for hierarchy "REG8:inst17|DFFR8:inst"
+Info (12128): Elaborating entity "div_freq25" for hierarchy "div_freq25:inst7"
+Info (12128): Elaborating entity "div_freq24" for hierarchy "div_freq25:inst7|div_freq24:inst1"
+Info (12128): Elaborating entity "div_freq4" for hierarchy "div_freq25:inst7|div_freq24:inst1|div_freq4:inst3"
+Info (12128): Elaborating entity "div_freq2" for hierarchy "div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1"
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:inst3"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst10"
+Info (12128): Elaborating entity "INC8" for hierarchy "PC:inst10|INC8:inst2"
+Info (12128): Elaborating entity "HA" for hierarchy "PC:inst10|INC8:inst2|HA:inst13"
 Info (12128): Elaborating entity "Temporizador" for hierarchy "Temporizador:inst1"
-Info (12128): Elaborating entity "DEMUX1x8" for hierarchy "Temporizador:inst1|DEMUX1x8:inst15"
-Info (12128): Elaborating entity "DEMUX1x2" for hierarchy "Temporizador:inst1|DEMUX1x8:inst15|DEMUX1x2:inst6"
 Info (12128): Elaborating entity "DFF3" for hierarchy "Temporizador:inst1|DFF3:inst11"
 Info (12128): Elaborating entity "MUX2x3" for hierarchy "Temporizador:inst1|MUX2x3:inst1"
-Info (12128): Elaborating entity "MUX2x1" for hierarchy "Temporizador:inst1|MUX2x3:inst1|MUX2x1:inst"
 Info (12128): Elaborating entity "INC3" for hierarchy "Temporizador:inst1|INC3:inst13"
-Info (12128): Elaborating entity "HA" for hierarchy "Temporizador:inst1|INC3:inst13|HA:inst8"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer MUX2x1:inst9|inst~synth
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "charge_PC" is stuck at GND
+    Warning (13410): Pin "N" is stuck at GND
+    Warning (13410): Pin "RI[7]" is stuck at GND
+    Warning (13410): Pin "RI[6]" is stuck at GND
+    Warning (13410): Pin "RI[5]" is stuck at GND
+    Warning (13410): Pin "RI[4]" is stuck at GND
+    Warning (13410): Pin "RI[3]" is stuck at GND
+    Warning (13410): Pin "RI[2]" is stuck at GND
+    Warning (13410): Pin "RI[1]" is stuck at GND
+    Warning (13410): Pin "RI[0]" is stuck at GND
+    Warning (13410): Pin "RDM[7]" is stuck at GND
+    Warning (13410): Pin "RDM[6]" is stuck at GND
+    Warning (13410): Pin "RDM[5]" is stuck at GND
+    Warning (13410): Pin "RDM[4]" is stuck at GND
+    Warning (13410): Pin "RDM[3]" is stuck at GND
+    Warning (13410): Pin "RDM[2]" is stuck at GND
+    Warning (13410): Pin "RDM[1]" is stuck at GND
+    Warning (13410): Pin "RDM[0]" is stuck at GND
+    Warning (13410): Pin "charge_RDM" is stuck at GND
+    Warning (13410): Pin "Z" is stuck at GND
+    Warning (13410): Pin "NOP" is stuck at VCC
+    Warning (13410): Pin "HLT" is stuck at GND
+    Warning (13410): Pin "AC[7]" is stuck at GND
+    Warning (13410): Pin "AC[6]" is stuck at GND
+    Warning (13410): Pin "AC[5]" is stuck at GND
+    Warning (13410): Pin "AC[4]" is stuck at GND
+    Warning (13410): Pin "AC[3]" is stuck at GND
+    Warning (13410): Pin "AC[2]" is stuck at GND
+    Warning (13410): Pin "AC[1]" is stuck at GND
+    Warning (13410): Pin "AC[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 35 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4584 megabytes
-    Info: Processing ended: Wed Aug 07 22:33:39 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 40 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4634 megabytes
+    Info: Processing ended: Sun Aug 18 17:55:40 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

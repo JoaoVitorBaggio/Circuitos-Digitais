@@ -2,40 +2,940 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -0.835
-TNS   : -1.659
+Type  : Slow 1200mV 85C Model Setup 'DEBUG'
+Slack : -0.673
+TNS   : -4.264
 
-Type  : Slow 1200mV 85C Model Hold 'clk'
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_IN'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -0.093
+TNS   : -0.093
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -0.093
+TNS   : -0.093
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -0.093
+TNS   : -0.093
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_IN'
+Slack : -0.075
+TNS   : -0.075
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -0.068
+TNS   : -0.068
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -0.066
+TNS   : -0.066
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -0.023
+TNS   : -0.023
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DEBUG'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DEBUG'
+Slack : -3.000
+TNS   : -13.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'DEBUG'
+Slack : -0.501
+TNS   : -2.820
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_IN'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_IN'
+Slack : -0.145
+TNS   : -0.145
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -0.103
+TNS   : -0.103
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -0.103
+TNS   : -0.103
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -0.103
+TNS   : -0.103
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -0.075
+TNS   : -0.075
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -0.073
+TNS   : -0.073
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -0.043
+TNS   : -0.043
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -0.043
+TNS   : -0.043
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -0.036
+TNS   : -0.036
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : -0.021
+TNS   : -0.021
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : -0.016
+TNS   : -0.016
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.112
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DEBUG'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DEBUG'
+Slack : -3.000
+TNS   : -13.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'DEBUG'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_IN'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
 Slack : 0.361
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -6.000
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -0.632
-TNS   : -1.263
-
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.320
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : 0.361
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -6.000
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : 0.362
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.029
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -0.052
+TNS   : -0.052
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -0.052
+TNS   : -0.052
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -0.052
+TNS   : -0.052
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -0.042
+TNS   : -0.042
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_IN'
+Slack : -0.039
 TNS   : -0.039
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.194
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -0.038
+TNS   : -0.038
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -0.020
+TNS   : -0.020
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : 0.003
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DEBUG'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DEBUG'
 Slack : -3.000
-TNS   : -6.168
+TNS   : -14.760
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.104
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst1|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst2|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst3|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst4|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst5|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst1|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_freq25:inst7|div_freq24:inst1|div_freq4:inst|div_freq2:inst|inst3'
+Slack : -1.000
+TNS   : -1.000
 
 ------------------------------------------------------------

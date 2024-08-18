@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY UNITL
+set_global_assignment -name TOP_LEVEL_ENTITY NEANDER
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:48:24  JULY 11, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -78,6 +78,24 @@ set_location_assignment PIN_J2 -to J2
 set_location_assignment PIN_J3 -to J3
 set_location_assignment PIN_J6 -to J6
 set_location_assignment PIN_J7 -to J7
+set_location_assignment PIN_E12 -to E12
+set_location_assignment PIN_F1 -to F1
+set_location_assignment PIN_F14 -to F14
+set_location_assignment PIN_F15 -to F15
+set_location_assignment PIN_F16 -to F16
+set_location_assignment PIN_G3 -to G3
+set_location_assignment PIN_G13 -to G13
+set_location_assignment PIN_G21 -to G21
+set_location_assignment PIN_H2 -to H2
+set_location_assignment PIN_H14 -to H14
+set_location_assignment PIN_H15 -to H15
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE Memoria/REG1.bdf
+set_global_assignment -name BDF_FILE partes/ULA_encoder.bdf
+set_global_assignment -name BDF_FILE partes/OPCODE_decoder.bdf
 set_global_assignment -name BDF_FILE Clock/div_freq24.bdf
 set_global_assignment -name BDF_FILE Clock/div_freq4.bdf
 set_global_assignment -name BDF_FILE Clock/div_freq2.bdf
@@ -121,38 +139,49 @@ set_global_assignment -name BDF_FILE partes/CUD8.bdf
 set_global_assignment -name BDF_FILE Clock/div_freq26.bdf
 set_global_assignment -name BDF_FILE IO/Button.bdf
 set_global_assignment -name BDF_FILE IO/Clock.bdf
-set_location_assignment PIN_E12 -to E12
-set_location_assignment PIN_F1 -to F1
-set_location_assignment PIN_F14 -to F14
-set_location_assignment PIN_F15 -to F15
-set_location_assignment PIN_F16 -to F16
-set_location_assignment PIN_G3 -to G3
-set_location_assignment PIN_G13 -to G13
-set_location_assignment PIN_G21 -to G21
-set_location_assignment PIN_H2 -to H2
-set_location_assignment PIN_H14 -to H14
-set_location_assignment PIN_H15 -to H15
 set_global_assignment -name BDF_FILE Memoria/DFF3.bdf
 set_global_assignment -name BDF_FILE Soma/INC3.bdf
 set_global_assignment -name BDF_FILE partes/Temporizador.bdf
 set_global_assignment -name BDF_FILE Etc/DEMUX1x2.bdf
 set_global_assignment -name BDF_FILE Etc/DEMUX1x8.bdf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name BDF_FILE partes/UC.bdf
 set_global_assignment -name BDF_FILE Etc/MUX2x3.bdf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/TopLevel.vwf"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE partes/ULA8.bdf
 set_global_assignment -name VHDL_FILE partes/ROM.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE IO/Display2.bdf
 set_global_assignment -name BDF_FILE IO/Display3.bdf
 set_global_assignment -name BDF_FILE NEANDER.bdf
 set_global_assignment -name BDF_FILE Memoria/DFFR8.bdf
 set_global_assignment -name BDF_FILE Memoria/REG8.bdf
 set_global_assignment -name BDF_FILE partes/PC.bdf
+set_global_assignment -name BDF_FILE Clock/div_freq25.bdf
+set_global_assignment -name BDF_FILE Etc/DEMUX1x16.bdf
+set_global_assignment -name BDF_FILE IO/LedS.bdf
+set_location_assignment PIN_A13 -to A13
+set_location_assignment PIN_A14 -to A14
+set_location_assignment PIN_A15 -to A15
+set_location_assignment PIN_A16 -to A16
+set_location_assignment PIN_A17 -to A17
+set_location_assignment PIN_A19 -to A19
+set_location_assignment PIN_B13 -to B13
+set_location_assignment PIN_B14 -to B14
+set_location_assignment PIN_B16 -to B16
+set_location_assignment PIN_B17 -to B17
+set_location_assignment PIN_B18 -to B18
+set_location_assignment PIN_B19 -to B19
+set_location_assignment PIN_C13 -to C13
+set_location_assignment PIN_C19 -to C19
+set_location_assignment PIN_D15 -to D15
+set_location_assignment PIN_D19 -to D19
+set_location_assignment PIN_E14 -to E14
+set_location_assignment PIN_E15 -to E15
+set_location_assignment PIN_G15 -to G15
+set_global_assignment -name VECTOR_WAVEFORM_FILE Soma/INC8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE partes/PC.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE partes/ROM.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE NEANDER.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/NEANDER.vwf"
