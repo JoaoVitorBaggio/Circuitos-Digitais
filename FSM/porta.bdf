@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 72 136 240 152)
+	(rect 208 56 376 72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "btn_subir" (rect 5 0 50 12)(font "Arial" ))
+	(text "abrindo" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 280 240 296)
+	(rect 208 80 376 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "btn_descer" (rect 5 0 60 12)(font "Arial" ))
+	(text "fechando" (rect 5 0 52 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 16 240 32)
+	(rect 208 104 376 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_in" (rect 5 0 34 12)(font "Arial" ))
+	(text "clk" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,25 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 760 144 936 160)
+	(rect 392 56 568 72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "andar[3..0]" (rect 90 0 143 12)(font "Arial" ))
+	(text "aberta" (rect 90 0 120 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 392 80 568 96)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "fechada" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -84,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 216 160 280 240)
+	(rect 464 216 528 296)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 68 20 80)(font "Arial" ))
 	(port
@@ -134,9 +150,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 216 304 280 384)
+	(rect 464 304 528 384)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 68 26 80)(font "Arial" ))
+	(text "inst1" (rect 3 68 26 80)(font "Arial" ))
 	(port
 		(pt 32 80)
 		(input)
@@ -182,156 +198,4 @@ applicable agreement for further details.
 		(circle (rect 28 4 36 12))
 		(circle (rect 28 68 36 76))
 	)
-)
-(symbol
-	(rect 248 -24 400 72)
-	(text "div_freq25" (rect 5 0 66 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "RESET" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
-		(text "CLK_IN" (rect 21 43 62 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "CLK_OUT" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "CLK_OUT" (rect 76 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 80))
-	)
-)
-(symbol
-	(rect 616 120 744 216)
-	(text "DFF3" (rect 5 0 34 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "D[2..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "D[2..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "S[2..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[2..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80))
-	)
-)
-(symbol
-	(rect 432 192 560 288)
-	(text "INC3" (rect 5 0 30 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[2..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "A[2..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Cin" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "Cin" (rect 21 43 38 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "S[2..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[2..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(port
-		(pt 128 48)
-		(output)
-		(text "Cout" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "Cout" (rect 82 43 107 57)(font "Arial" (font_size 8)))
-		(line (pt 128 48)(pt 112 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80))
-	)
-)
-(connector
-	(pt 248 160)
-	(pt 248 144)
-)
-(connector
-	(pt 248 144)
-	(pt 240 144)
-)
-(connector
-	(pt 248 24)
-	(pt 240 24)
-)
-(connector
-	(text "clk" (rect 424 -8 438 4)(font "Arial" ))
-	(pt 400 8)
-	(pt 440 8)
-)
-(connector
-	(text "clk" (rect 192 184 206 196)(font "Arial" ))
-	(pt 216 200)
-	(pt 184 200)
-)
-(connector
-	(pt 248 288)
-	(pt 240 288)
-)
-(connector
-	(text "clk" (rect 192 328 206 340)(font "Arial" ))
-	(pt 216 344)
-	(pt 184 344)
-)
-(connector
-	(pt 248 288)
-	(pt 248 304)
-)
-(connector
-	(pt 248 240)
-	(pt 248 264)
-)
-(connector
-	(pt 248 384)
-	(pt 248 408)
-)
-(connector
-	(text "reset_descer" (rect 189 392 252 404)(font "Arial" ))
-	(pt 184 408)
-	(pt 248 408)
-)
-(connector
-	(text "reset_subir" (rect 189 248 243 260)(font "Arial" ))
-	(pt 184 264)
-	(pt 248 264)
-)
-(connector
-	(pt 744 152)
-	(pt 760 152)
-	(bus)
 )
