@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="UNITL">
-		<CBX_INST_ENTRY INSTANCE_NAME="|NEANDER|ROM:inst3|altsyncram:Mux0_rtl_0" CBX_FILE_NAME="altsyncram_nbv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UNITL|NEANDER:inst2|ROM:inst3|altsyncram:Mux5_rtl_0" CBX_FILE_NAME="altsyncram_66v.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
