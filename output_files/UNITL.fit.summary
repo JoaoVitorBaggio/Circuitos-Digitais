@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Aug 18 20:20:20 2024
+Fitter Status : Successful - Tue Aug 20 09:59:49 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : UNITL
 Top-level Entity Name : NEANDER
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 158 / 15,408 ( 1 % )
-    Total combinational functions : 130 / 15,408 ( < 1 % )
-    Dedicated logic registers : 71 / 15,408 ( < 1 % )
-Total registers : 71
-Total pins : 49 / 347 ( 14 % )
+Total logic elements : 153 / 15,408 ( < 1 % )
+    Total combinational functions : 128 / 15,408 ( < 1 % )
+    Dedicated logic registers : 66 / 15,408 ( < 1 % )
+Total registers : 66
+Total pins : 23 / 347 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 2,048 / 516,096 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )

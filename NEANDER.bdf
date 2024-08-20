@@ -919,35 +919,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 720 360 872 456)
-	(text "div_freq25" (rect 5 0 66 14)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "RESET" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
-		(text "CLK_IN" (rect 21 43 62 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "CLK_OUT" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "CLK_OUT" (rect 76 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 80))
-	)
-)
-(symbol
 	(rect -72 192 56 320)
 	(text "PC" (rect 5 0 20 14)(font "Arial" (font_size 8)))
 	(text "inst10" (rect 8 112 37 124)(font "Arial" ))
@@ -1064,6 +1035,35 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 720 360 872 456)
+	(text "div_freq24" (rect 5 0 66 14)(font "Arial" (font_size 8)))
+	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLK_IN" (rect 21 43 62 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "CLK_OUT" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "CLK_OUT" (rect 76 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
 	)
 )
 (connector

@@ -28,7 +28,13 @@
 # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
 # Loading work.NEANDER_vlg_sample_tst
 # Loading work.NEANDER_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from UNITL_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from UNITL_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /NEANDER_vlg_vec_tst File: UNITL.vt
 # ERROR! Vector Mismatch for output port AC[1] :: @time = 1000000.000 ps
 #      Expected value = 00000000
 #      Real value = 11110110
@@ -47,15 +53,6 @@
 # ERROR! Vector Mismatch for output port AC[7] :: @time = 1000000.000 ps
 #      Expected value = 00000000
 #      Real value = 11110110
-# ERROR! Vector Mismatch for output port AUX[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10000010
-# ERROR! Vector Mismatch for output port AUX[7] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 10000010
-# ERROR! Vector Mismatch for output port charge_REM :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
 # ERROR! Vector Mismatch for output port N :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
@@ -68,63 +65,21 @@
 # ERROR! Vector Mismatch for output port PC[2] :: @time = 1000000.000 ps
 #      Expected value = 00000000
 #      Real value = 00000111
-# ERROR! Vector Mismatch for output port REM[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000110
-# ERROR! Vector Mismatch for output port REM[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000110
-# ERROR! Vector Mismatch for output port RI[4] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00110000
-# ERROR! Vector Mismatch for output port RI[5] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00110000
-# ERROR! Vector Mismatch for output port sel :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port AUX[0] :: @time = 1040000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port AUX[2] :: @time = 1040000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port REM[7] :: @time = 1040000.000 ps
-#      Expected value = 00000000
-#      Real value = 10000010
 # ERROR! Vector Mismatch for output port Z :: @time = 1120000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port REM[0] :: @time = 1160000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port AUX[3] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 00001000
 # ERROR! Vector Mismatch for output port PC[3] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 00001000
-# ERROR! Vector Mismatch for output port RI[7] :: @time = 1240000.000 ps
-#      Expected value = 00000000
-#      Real value = 10100000
-# ERROR! Vector Mismatch for output port REM[3] :: @time = 1280000.000 ps
 #      Expected value = 00000000
 #      Real value = 00001000
 # ERROR! Vector Mismatch for output port AC[0] :: @time = 1680000.000 ps
 #      Expected value = 00000000
 #      Real value = 00000001
-# ERROR! Vector Mismatch for output port AUX[4] :: @time = 1760000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010000
 # ERROR! Vector Mismatch for output port PC[4] :: @time = 1760000.000 ps
 #      Expected value = 00000000
 #      Real value = 00010000
 # ERROR! Vector Mismatch for output port HLT :: @time = 1800000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port RI[6] :: @time = 1800000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110000
-#          32 mismatched vectors : Simulation failed !
-# ** Note: $finish    : UNITL.vt(1067)
+#          15 mismatched vectors : Simulation failed !
+# ** Note: $finish    : UNITL.vt(531)
 #    Time: 5 us  Iteration: 0  Instance: /NEANDER_vlg_vec_tst/tb_out

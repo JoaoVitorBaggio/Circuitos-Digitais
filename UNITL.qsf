@@ -89,10 +89,10 @@ set_location_assignment PIN_G21 -to G21
 set_location_assignment PIN_H2 -to H2
 set_location_assignment PIN_H14 -to H14
 set_location_assignment PIN_H15 -to H15
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name BDF_FILE Memoria/REG1.bdf
 set_global_assignment -name BDF_FILE partes/ULA_encoder.bdf
 set_global_assignment -name BDF_FILE partes/OPCODE_decoder.bdf
@@ -180,12 +180,13 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Soma/INC8.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE partes/PC.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE partes/ROM.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE NEANDER.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/NEANDER.vwf"
 set_global_assignment -name BDF_FILE Soma/DEC3.bdf
 set_global_assignment -name BDF_FILE FSM/CUD3.bdf
 set_global_assignment -name BDF_FILE FSM/Elevador.bdf
 set_global_assignment -name BDF_FILE Memoria/BTN_REG8.bdf
 set_global_assignment -name BDF_FILE FSM/porta.bdf
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/NEANDER.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

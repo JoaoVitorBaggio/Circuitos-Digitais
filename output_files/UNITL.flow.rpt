@@ -1,5 +1,5 @@
 Flow report for UNITL
-Mon Aug 19 18:43:09 2024
+Tue Aug 20 10:01:46 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Aug 19 18:43:09 2024           ;
+; Flow Status                        ; Successful - Tue Aug 20 10:01:46 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; UNITL                                           ;
-; Top-level Entity Name              ; UNITL                                           ;
+; Top-level Entity Name              ; NEANDER                                         ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16F484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 160                                             ;
-;     Total combinational functions  ; 155                                             ;
-;     Dedicated logic registers      ; 67                                              ;
-; Total registers                    ; 67                                              ;
-; Total pins                         ; 52                                              ;
+; Total logic elements               ; 153 / 15,408 ( < 1 % )                          ;
+;     Total combinational functions  ; 128 / 15,408 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 66 / 15,408 ( < 1 % )                           ;
+; Total registers                    ; 66                                              ;
+; Total pins                         ; 23 / 347 ( 7 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 2,048                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total memory bits                  ; 2,048 / 516,096 ( < 1 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/19/2024 18:43:05 ;
+; Start date & time ; 08/20/2024 09:59:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; UNITL               ;
 +-------------------+---------------------+
@@ -75,45 +75,70 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 247207021423543.172410378511600       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 247207021423543.172415876310012       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; NEANDER     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; NEANDER     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; NEANDER     ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; NEANDER                               ; UNITL         ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4642 MB             ; 00:00:03                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4638 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4913 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4546 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:13     ; 1.0                     ; 4603 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4499 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4507 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4523 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4507 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4523 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:17                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-OKDL779  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off UNITL -c UNITL
+quartus_fit --read_settings_files=off --write_settings_files=off UNITL -c UNITL
+quartus_asm --read_settings_files=off --write_settings_files=off UNITL -c UNITL
+quartus_sta UNITL -c UNITL
+quartus_eda --read_settings_files=off --write_settings_files=off UNITL -c UNITL
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog UNITL -c UNITL --vector_source=C:/CD/NEANDER.vwf --testbench_file=./simulation/qsim/UNITL.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog UNITL -c UNITL
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog UNITL -c UNITL --vector_source=C:/CD/NEANDER.vwf --testbench_file=./simulation/qsim/UNITL.vt
+quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog UNITL -c UNITL
 
 
 
