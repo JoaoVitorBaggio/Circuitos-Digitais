@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 104 384 272 400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ResetAndar" (rect 5 0 63 12)(font "Arial" ))
+	(text "ResetAndar" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 104 408 272 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -347,31 +347,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 176 168 224 200)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 21 20 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
 	(rect 288 376 336 408)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
@@ -460,6 +435,31 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 176 168 224 200)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst20" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 440 152)
 	(pt 440 112)
@@ -517,19 +517,7 @@ applicable agreement for further details.
 	(pt 232 120)
 )
 (connector
-	(pt 176 184)
-	(pt 168 184)
-)
-(connector
-	(pt 224 184)
-	(pt 232 184)
-)
-(connector
 	(pt 368 264)
-	(pt 232 264)
-)
-(connector
-	(pt 232 184)
 	(pt 232 264)
 )
 (connector
@@ -592,12 +580,24 @@ applicable agreement for further details.
 	(pt 232 144)
 )
 (connector
+	(pt 800 104)
+	(pt 792 104)
+)
+(connector
+	(pt 168 184)
+	(pt 176 184)
+)
+(connector
+	(pt 232 184)
+	(pt 224 184)
+)
+(connector
 	(pt 232 144)
 	(pt 232 184)
 )
 (connector
-	(pt 800 104)
-	(pt 792 104)
+	(pt 232 184)
+	(pt 232 264)
 )
 (junction (pt 440 272))
 (junction (pt 232 144))

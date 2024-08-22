@@ -1,0 +1,44 @@
+library verilog;
+use verilog.vl_types.all;
+entity Elevador_TL is
+    port(
+        E11             : out    vl_logic;
+        G21             : in     vl_logic;
+        H2              : in     vl_logic;
+        G3              : in     vl_logic;
+        F1              : in     vl_logic;
+        J6              : in     vl_logic;
+        H5              : in     vl_logic;
+        H6              : in     vl_logic;
+        G4              : in     vl_logic;
+        G5              : in     vl_logic;
+        J7              : in     vl_logic;
+        H7              : in     vl_logic;
+        E3              : in     vl_logic;
+        E4              : in     vl_logic;
+        D2              : in     vl_logic;
+        F11             : out    vl_logic;
+        H12             : out    vl_logic;
+        H13             : out    vl_logic;
+        G12             : out    vl_logic;
+        F12             : out    vl_logic;
+        F13             : out    vl_logic;
+        J1              : out    vl_logic;
+        J2              : out    vl_logic;
+        J3              : out    vl_logic;
+        H1              : out    vl_logic;
+        F2              : out    vl_logic;
+        E1              : out    vl_logic;
+        C1              : out    vl_logic;
+        C2              : out    vl_logic;
+        B2              : out    vl_logic;
+        B1              : out    vl_logic;
+        E14             : out    vl_logic;
+        B13             : out    vl_logic;
+        A13             : out    vl_logic;
+        C13             : out    vl_logic;
+        A14             : out    vl_logic;
+        B14             : out    vl_logic;
+        A15             : out    vl_logic
+    );
+end Elevador_TL;

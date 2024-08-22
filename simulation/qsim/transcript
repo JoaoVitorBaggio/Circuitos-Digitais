@@ -2,84 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NEANDER
+# -- Compiling module FSM1
 # 
 # Top level modules:
-# 	NEANDER
+# 	FSM1
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NEANDER_vlg_sample_tst
-# -- Compiling module NEANDER_vlg_check_tst
-# -- Compiling module NEANDER_vlg_vec_tst
+# -- Compiling module FSM1_vlg_sample_tst
+# -- Compiling module FSM1_vlg_check_tst
+# -- Compiling module FSM1_vlg_vec_tst
 # 
 # Top level modules:
-# 	NEANDER_vlg_vec_tst
-# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.NEANDER_vlg_vec_tst 
-# Loading work.NEANDER_vlg_vec_tst
-# Loading work.NEANDER
+# 	FSM1_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.FSM1_vlg_vec_tst 
+# Loading work.FSM1_vlg_vec_tst
+# Loading work.FSM1
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading altera_ver.dffeas
-# Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_io_obuf
-# Loading cycloneiii_ver.cycloneiii_clkctrl
-# Loading cycloneiii_ver.cycloneiii_mux41
-# Loading cycloneiii_ver.cycloneiii_ena_reg
-# Loading cycloneiii_ver.cycloneiii_ram_block
-# Loading cycloneiii_ver.cycloneiii_ram_register
-# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
-# Loading work.NEANDER_vlg_sample_tst
-# Loading work.NEANDER_vlg_check_tst
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading instances from UNITL_v.sdo
+# Loading work.FSM1_vlg_sample_tst
+# Loading work.FSM1_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from UNITL_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /NEANDER_vlg_vec_tst File: UNITL.vt
-# ERROR! Vector Mismatch for output port AC[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port AC[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port AC[4] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port AC[5] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port AC[6] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port AC[7] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 11110110
-# ERROR! Vector Mismatch for output port N :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port PC[0] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port PC[1] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port PC[2] :: @time = 1000000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000111
-# ERROR! Vector Mismatch for output port Z :: @time = 1120000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port PC[3] :: @time = 1200000.000 ps
-#      Expected value = 00000000
-#      Real value = 00001000
-# ERROR! Vector Mismatch for output port AC[0] :: @time = 1680000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000001
-# ERROR! Vector Mismatch for output port PC[4] :: @time = 1760000.000 ps
-#      Expected value = 00000000
-#      Real value = 00010000
-# ERROR! Vector Mismatch for output port HLT :: @time = 1800000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#          15 mismatched vectors : Simulation failed !
-# ** Note: $finish    : UNITL.vt(531)
-#    Time: 5 us  Iteration: 0  Instance: /NEANDER_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : semaforo.vwf.vt(356)
+#    Time: 1 us  Iteration: 0  Instance: /FSM1_vlg_vec_tst/tb_out

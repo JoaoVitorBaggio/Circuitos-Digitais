@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY UNITL
+set_global_assignment -name TOP_LEVEL_ENTITY Semaforo_TL
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:48:24  JULY 11, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -92,7 +92,7 @@ set_location_assignment PIN_H15 -to H15
 set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name BDF_FILE Memoria/REG1.bdf
 set_global_assignment -name BDF_FILE partes/ULA_encoder.bdf
 set_global_assignment -name BDF_FILE partes/OPCODE_decoder.bdf
@@ -187,10 +187,6 @@ set_global_assignment -name BDF_FILE Memoria/BTN_REG8.bdf
 set_global_assignment -name BDF_FILE FSM/porta.bdf
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CD/NEANDER.vwf"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE Memoria/REG_andar.bdf
 set_global_assignment -name BDF_FILE Etc/OR_map3.bdf
 set_global_assignment -name BDF_FILE Etc/MUX2x2.bdf
@@ -202,3 +198,16 @@ set_global_assignment -name BDF_FILE Etc/Compare3.bdf
 set_global_assignment -name BDF_FILE FSM/MaxAndar3.bdf
 set_global_assignment -name BDF_FILE FSM/MinAndar3.bdf
 set_global_assignment -name BDF_FILE FSM/ControleElevador.bdf
+set_global_assignment -name BDF_FILE Elevador_TL.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE FSM/MaxAndar3.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Andre2023/Circuitos-Digitais-main/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE FSM/Compare3.vwf
+set_global_assignment -name BDF_FILE FSM/fsm_logic.bdf
+set_global_assignment -name BDF_FILE FSM/FSM1.bdf
+set_global_assignment -name BDF_FILE Memoria/DFF4.bdf
+set_global_assignment -name BDF_FILE Semaforo_TL.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE FSM/semaforo.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

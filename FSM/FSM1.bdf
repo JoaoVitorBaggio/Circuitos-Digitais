@@ -316,42 +316,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 408 336 504)
-	(text "MUX2x1" (rect 5 0 52 14)(font "Arial" (font_size 8)))
-	(text "inst9" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "A" (rect 21 27 30 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Sel" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "Sel" (rect 21 43 38 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "B" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "B" (rect 21 59 29 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "pin_name1" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "pin_name1" (rect 54 27 115 41)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 120 80))
-	)
-)
-(symbol
 	(rect 112 456 144 472)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 5 32 17)(font "Arial" )(invisible))
@@ -442,6 +406,42 @@ applicable agreement for further details.
 	)
 	(rotate180)
 )
+(symbol
+	(rect 240 408 336 504)
+	(text "MUX2x1" (rect 5 0 52 14)(font "Arial" (font_size 8)))
+	(text "inst13" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "A" (rect 21 27 30 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "B" (rect 21 43 29 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Sel" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "Sel" (rect 21 59 38 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "S" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "S" (rect 67 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
 (connector
 	(text "state1" (rect 748 224 778 236)(font "Arial" ))
 	(pt 784 240)
@@ -522,30 +522,8 @@ applicable agreement for further details.
 	(pt 760 216)
 )
 (connector
-	(pt 336 440)
-	(pt 384 440)
-)
-(connector
-	(pt 384 440)
-	(pt 384 408)
-)
-(connector
 	(pt 408 408)
 	(pt 384 408)
-)
-(connector
-	(text "start" (rect 171 440 193 452)(font "Arial" ))
-	(pt 200 456)
-	(pt 152 456)
-)
-(connector
-	(text "state3" (rect 136 424 166 436)(font "Arial" ))
-	(pt 200 440)
-	(pt 120 440)
-)
-(connector
-	(pt 200 472)
-	(pt 128 472)
 )
 (connector
 	(pt 8 400)
@@ -633,6 +611,36 @@ applicable agreement for further details.
 	(pt 568 376)
 	(pt 688 376)
 	(bus)
+)
+(connector
+	(pt 384 440)
+	(pt 336 440)
+)
+(connector
+	(pt 384 408)
+	(pt 384 440)
+)
+(connector
+	(text "state3" (rect 176 424 206 436)(font "Arial" ))
+	(pt 240 440)
+	(pt 160 440)
+)
+(connector
+	(text "start" (rect 211 456 233 468)(font "Arial" ))
+	(pt 240 472)
+	(pt 192 472)
+)
+(connector
+	(pt 128 472)
+	(pt 160 472)
+)
+(connector
+	(pt 240 456)
+	(pt 160 456)
+)
+(connector
+	(pt 160 456)
+	(pt 160 472)
 )
 (junction (pt 568 376))
 (junction (pt 656 576))

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/aluno/Documents/GitHub/Circuitos-Digitais/output_files/") File("UNITL.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Andre2023/Circuitos-Digitais-main/output_files/") File("UNITL.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
